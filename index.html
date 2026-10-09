@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA | Digital Agency</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+    <section class="hero-section">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <a href="#" class="logo">NOVA</a>
+
+            <div class="nav-links">
+                <a href="#about">About us</a>
+                <a href="#services">Services</a>
+                <a href="#work">Selected work</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+
+            <div class="nav-right">
+                <div class="language">
+                    <a href="#">PL</a>
+                    <span>/</span>
+                    <a href="#" class="active">EN</a>
+                </div>
+
+                <a href="#contact" class="nav-button">
+                    Start a project
+                </a>
+
+                <button class="menu-toggle" aria-label="Open navigation"
+                        aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+
+        </nav>
+
+        
+        <main class="hero-content">
+
+            
+            <div class="hero-text">
+
+                <p class="eyebrow">
+                    STRATEGY / DESIGN / TECHNOLOGY
+                </p>
+
+                <h1>
+                    New possibilities for
+                    <span>ambitious brands</span>
+                </h1>
+
+                <p class="description">
+                    We create modern websites that strengthen your image,
+                    attract clients and turn your business goals into real growth.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Start a project
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        Meet the team
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="hero-image">
+
+                <img
+                    src="hero.png"
+                    alt="Creative professional working on a laptop"
+                >
+
+            </div>
+
+        </main>
+
+        
+        <div class="trusted-section">
+
+            <span class="trusted-label">Trusted by</span>
+
+            <div class="brand-list">
+                <span>MODO</span>
+                <span>LUMI</span>
+                <span>KOVO</span>
+                <span>NOMA</span>
+                <span>ASPEKT</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("show");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation" : "Open navigation"
+            );
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+    </script>
+
+</body>
+</html>
+```
